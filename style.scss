@@ -1,0 +1,352 @@
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-color: grey;
+    background: url("images/Landscape.png") no-repeat center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    .header-bandeau {
+        &-bloc1 {
+            background-color: #EF5656;
+            width: 100%;
+            height: 40px;
+            box-shadow: 10px 10px 0 1px #861220;
+        }
+
+        &-bloc2 {
+            display: flex;
+            flex-direction: row-reverse;
+
+            &__subblock {
+                background-color: #EF5656;
+                width: 10%;
+                height: 25px;
+                z-index: 1;
+                box-shadow: -10px 10px 0 1px #861220;
+            }
+
+            &__skew {
+                background-color: #EF5656;
+                width: 100px;
+                height: 25px;
+                transform: skewX(30deg) translateX(20px);
+                z-index: 10;
+                box-shadow: -10px 10px 0 1px #861220;
+            }
+        }
+    }
+}
+
+.pokedev {
+    position: absolute;
+    z-index: 2;
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 120px;
+
+}
+
+.pokemon {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 40px;
+
+    @media only screen and (max-width: 340px) {
+        width: 100%;
+    }
+    @media only screen and (min-width: 341px) and (max-width: 575px) {
+        width: 100%;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+        width: 540px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+        width: 720px;
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        width: 960px;
+    }
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        width: 1140px;
+        }
+    @media only screen and (min-width: 1400px) {
+        width: 1320px;
+            }
+
+    h3 {
+        font-family: Montserrat;
+        text-shadow: rgb(73, 73, 73) 3px 2px;
+        margin: 0 0 10px;
+        font-weight: bolder;
+        color: white;
+
+        &:hover {
+            text-shadow: 0 0 1px rgb(0 0 0 / 0%);
+            cursor: cell;
+        }
+        @media only screen and (max-width: 340px) {
+            font-size: x-small;
+        }
+        @media only screen and (min-width: 341px) and (max-width: 575px) {
+            font-size: small;
+        }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            font-size: medium;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+            font-size: large;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            font-size: large;
+        }
+    }
+
+    img {
+
+        box-shadow: -1px 0 31px -5px rgba(0,0,0,1);
+        border-radius: 30%;
+        background-color: white;
+
+        &:hover {
+            box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+            cursor: cell;
+        }
+
+        @media only screen and (max-width: 340px) {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+        }
+        @media only screen and (min-width: 341px) and (max-width: 575px) {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1399px), (orientation: landscape) {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+            @media only screen and (min-width: 1400px) {
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            }
+        }
+
+    }
+}
+
+i:hover {
+    cursor: alias;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #EF5656;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------------- APTITUDES ------------------------*/
+
+
+.body-section-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 720px;
+    }
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        width: 960px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1399px){
+        width: 1140px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        width: 1320px;
+    }
+
+    &-1__imgtitre {
+        img {
+        width: 200px;
+        background-color: white;
+        border-radius: 30px;
+        margin-top: 30px;
+
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            height: 300px;
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            height: 350px;
+            width: 350px;
+        }
+
+        @media only screen and (min-width: 1400px) {
+            height: 400px;
+            width: 400px;
+        }
+        }
+
+        h3 {
+            font-family: montserrat;
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+            font-size: 30px;
+            margin: 0 auto;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                font-size: 25px;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                font-size: 30px;
+                width: 250px;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 35px;
+                width: 250px;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                font-size: 40px;
+                width: 300px;
+            }
+        }
+    }
+
+    &-2 {
+        h3 {
+            font-family: montserrat;
+            background-color: white;
+            width: 200px;
+            border-radius: 30px;
+            margin: 10px 0;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                font-size: 25px;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                font-size: 30px;
+                width: 250px;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 35px;
+                width: 250px;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                font-size: 40px;
+                width: 300px;
+            }
+        }
+
+        &__attaque, &__attaquespe, &__defense {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        h4 {
+            font-family: montserrat;
+            font-style: italic;
+            font-size: 20px;
+            margin: 10px 0;
+
+            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                font-size: 25px;
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                font-size: 27px;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                font-size: 30px;
+            }
+
+            @media only screen and (min-width: 1400px) {
+                font-size: 33px;
+            }
+
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+            width: 40%;
+            margin-left: 70px;
+        }
+
+    }
+}
+
+p {
+    font-family: montserrat;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    text-decoration: underline black 1px;
+    text-underline-offset: 8px;
+    margin: 10px 0;
+
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        font-size: 25px;
+    }
+
+    @media only screen and (min-width: 1400px) {
+        font-size: 30px;
+    }
+}

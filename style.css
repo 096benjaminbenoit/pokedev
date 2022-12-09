@@ -1,382 +1,382 @@
-html, body {
-    height: 100%;
+body,
+html {
+  height: 100%;
 }
 
 body {
-    background-color: grey;
-    background: url("images/Landscape.png") no-repeat center fixed;
-    background-size: cover;
-    margin: 0px;
+  background-color: grey;
+  background: url("images/Landscape.png") no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
 }
 
 header {
-   position: sticky;
-   top: 0px;
-   flex-grow: 0;
-   flex-shrink: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-
-.header-bandeau-bloc1 {
-    background-color: #EF5656;
-    width: 100%;
-    height: 40px;
-    box-shadow: 10px 10px 0px 1px #861220;
+header .header-bandeau-bloc1 {
+  background-color: #EF5656;
+  width: 100%;
+  height: 40px;
+  box-shadow: 10px 10px 0 1px #861220;
 }
-
-.header-bandeau-bloc2 {
-    display: flex;
-    flex-direction: row-reverse;
+header .header-bandeau-bloc2 {
+  display: flex;
+  flex-direction: row-reverse;
 }
-
-.header-bandeau-bloc2__subblock {
-    background-color: #EF5656;
-    width: 10%;
-    height: 25px;
-    z-index: 1;
-    box-shadow: -10px 10px 0px 1px #861220;
+header .header-bandeau-bloc2__subblock {
+  background-color: #EF5656;
+  width: 10%;
+  height: 25px;
+  z-index: 1;
+  box-shadow: -10px 10px 0 1px #861220;
 }
-
-.header-bandeau-bloc2__skew {
-    background-color: #EF5656;
-    width: 100px;
-    height: 25px;
-    transform: skewX(30deg) translateX(20px);
-    z-index: 10;
-    box-shadow: -10px 10px 0px 1px #861220;
+header .header-bandeau-bloc2__skew {
+  background-color: #EF5656;
+  width: 100px;
+  height: 25px;
+  transform: skewX(30deg) translateX(20px);
+  z-index: 10;
+  box-shadow: -10px 10px 0 1px #861220;
 }
 
 .pokedev {
-    position: absolute;
-    z-index: 2;
-    margin-top: 3px;
-    margin-left: 10px;
-    width: 120px;
-
+  position: absolute;
+  z-index: 2;
+  margin-top: 3px;
+  margin-left: 10px;
+  width: 120px;
 }
 
-.pokemon { 
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    padding-bottom: 40px;
+.pokemon {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 40px;
 }
-
+@media only screen and (max-width: 340px) {
+  .pokemon {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 341px) and (max-width: 575px) {
+  .pokemon {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pokemon {
+    width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .pokemon {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pokemon {
+    width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .pokemon {
+    width: 1140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .pokemon {
+    width: 1320px;
+  }
+}
 .pokemon h3 {
-    
-    font-family: Montserrat;
-    text-shadow: rgb(73, 73, 73) 3px 2px;
-    margin: 0px 0px 10px 0px;
-    font-weight:bolder;
-    color: white;
+  font-family: Montserrat;
+  text-shadow: rgb(73, 73, 73) 3px 2px;
+  margin: 0 0 10px;
+  font-weight: bolder;
+  color: white;
 }
-
+.pokemon h3:hover {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: cell;
+}
+@media only screen and (max-width: 340px) {
+  .pokemon h3 {
+    font-size: x-small;
+  }
+}
+@media only screen and (min-width: 341px) and (max-width: 575px) {
+  .pokemon h3 {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pokemon h3 {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .pokemon h3 {
+    font-size: large;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .pokemon h3 {
+    font-size: large;
+  }
+}
 .pokemon img {
-    
-    box-shadow: -1px 0px 31px -5px rgba(0,0,0,1);    
-    border-radius: 30%;
-    background-color: white;
+  box-shadow: -1px 0 31px -5px rgb(0, 0, 0);
+  border-radius: 30%;
+  background-color: white;
 }
-
-img:hover {
-    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
-    cursor:cell;
+.pokemon img:hover {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  cursor: cell;
 }
-
-h3:hover {
-    text-shadow: 0 0 1px rgb(0 0 0 / 0%);
-    cursor:cell;
+@media only screen and (max-width: 340px) {
+  .pokemon img {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 341px) and (max-width: 575px) {
+  .pokemon img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .pokemon img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1399px), (orientation: landscape) {
+  .pokemon img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1399px) and (min-width: 1400px), only screen and (orientation: landscape) and (min-width: 1400px) {
+  .pokemon img {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+  }
 }
 
 i:hover {
-    cursor: alias;
+  cursor: alias;
 }
 
 footer {
-    height: 30px;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    background-color: #EF5656;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #EF5656;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-/*-----------------XX-SMALL--------------------*/
-@media only screen and (max-width: 340px) {
-    .pokemon {
-        width: 100%;
-    }
-    .pokemon h3 {
-        font-size: x-small;
-    }
-    .pokemon img {
-        width: 120px;
-        height: 120px;
-        margin: 10px;
-    }
-}
-/*-----------------EXTRA-SMALL--------------------*/
-@media only screen and (min-width: 341px) and (max-width: 575px) {
-    .pokemon {
-        width: 100%;
-    }
-    .pokemon h3 {
-        font-size: small;
-    }
-    .pokemon img {
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-    }
-}
-/*-----------------SMALL--------------------*/
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .pokemon {
-        width: 540px;
-    }
-    .pokemon h3 {
-        font-size:medium;
-    }
-    .pokemon img {
-        width: 200px;
-        height: 200px;
-        margin: 10px;
-    }
-}
-/*-----------------Medium--------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-    .pokemon {
-        width: 720px;
-    }
-   
-    .pokemon h3 {
-        font-size: large;
-    }
-    .pokemon img {
-        width: 200px;
-        height: 200px;
-        margin: 20px;
-    }
-    
-} 
-/*-----------------LARGE--------------------*/
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .pokemon {
-        width: 960px;
-    }
-    .pokemon h3 {
-        font-size: large;
-    }
-    .pokemon img {
-        width: 200px;
-        height: 200px;
-        margin: 20px;
-    }
-    
-} 
-
-/*-----------------X-LARGE--------------------*/
-
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .pokemon {
-        width: 1140px;
-    }
-    .pokemon h3 {
-        font-size: large;
-    }
-    .pokemon img {
-        width: 200px;
-        height: 200px;
-        margin: 20px;
-    }
-    
-} 
-
-/*-----------------XX-LARGE--------------------*/
-
-@media only screen and (min-width: 1400px) {
-    .pokemon {
-        width: 1320px;
-    }
-    .pokemon h3 {
-        font-size: large;
-    }
-    .pokemon img {
-        width: 240px;
-        height: 240px;
-        margin: 20px;
-    }
-    
-} 
 
 /* ------------------- APTITUDES ------------------------*/
-
 .body-section-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
 }
-
-.body-section-main-1__imgtitre img {
-    width: 200px;
-    background-color: white;
-    border-radius: 30px;
-    margin-top: 30px;
-}
-
-.body-section-main-1__imgtitre h3 {
-    font-family: montserrat;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    font-size: 30px;
-    margin: 0 auto;
-}
-
-.body-section-main-2 h3 {
-    font-family: montserrat;
-    background-color: white;
-    width: 200px;
-    border-radius: 30px;
-    margin: 10px 0px;
-}
-
-.body-section-main-2__attaque, .body-section-main-2__defense, .body-section-main-2__attaquespe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h4 {
-    font-family: montserrat;
-    font-style: italic;
-    font-size: 20px;
-    margin: 10px 0px;
-}
-
-p {
-    font-family: montserrat;
-    font-size: 20px;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    text-decoration: underline black 1px;
-    text-underline-offset: 8px;
-    margin: 10px 0px;
-}
-
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-    .body-section-main {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 720px;
-    }
-
-    .body-section-main-2 {
-        width: 40%;
-        margin-left: 70px;
-    }
-
-    .body-section-main-1 h3, .body-section-main-2 h3 {
-        font-size: 25px;
-    }
-
-    h4 {
-        font-size: 25px;
-    }
+  .body-section-main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+  }
 }
-
-/*-----------------LARGE--------------------*/
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .body-section-main {
-        width: 960px;
+    width: 960px;
   }
-  .body-section-main-1 h3, .body-section-main-2 h3 {
-    font-size: 30px;
-    width: 250px;
-    }
-
-    p {
-        font-size: 25px;
-    }
-
-    .body-section-main-1__imgtitre img {
-        height: 300px;
-        width: 300px;
-    }
-
-    h4 {
-        font-size: 27px;
-    }
-} 
-
-/*-----------------X-LARGE--------------------*/
-
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-   .body-section-main {
-        width: 1140px;
-   }
-   .body-section-main-1 h3, .body-section-main-2 h3 {
-    font-size: 35px;
-    width: 250px;
+  .body-section-main {
+    width: 1140px;
+  }
 }
-
-p {
-    font-size: 25px;
-}
-
-.body-section-main-1__imgtitre img {
-    height: 350px;
-    width: 350px;
-}
-
-h4 {
-    font-size: 30px;
-}
-} 
-
-/*-----------------XX-LARGE--------------------*/
-
 @media only screen and (min-width: 1400px) {
   .body-section-main {
     width: 1320px;
   }
-  .body-section-main-1 h3, .body-section-main-2 h3 {
+}
+.body-section-main-1__imgtitre img {
+  width: 200px;
+  background-color: white;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .body-section-main-1__imgtitre img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .body-section-main-1__imgtitre img {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .body-section-main-1__imgtitre img {
+    height: 400px;
+    width: 400px;
+  }
+}
+.body-section-main-1__imgtitre h3 {
+  font-family: montserrat;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 30px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .body-section-main-1__imgtitre h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .body-section-main-1__imgtitre h3 {
+    font-size: 30px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .body-section-main-1__imgtitre h3 {
+    font-size: 35px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .body-section-main-1__imgtitre h3 {
     font-size: 40px;
     width: 300px;
+  }
+}
+.body-section-main-2 h3 {
+  font-family: montserrat;
+  background-color: white;
+  width: 200px;
+  border-radius: 30px;
+  margin: 10px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .body-section-main-2 h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .body-section-main-2 h3 {
+    font-size: 30px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .body-section-main-2 h3 {
+    font-size: 35px;
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .body-section-main-2 h3 {
+    font-size: 40px;
+    width: 300px;
+  }
+}
+.body-section-main-2__attaque, .body-section-main-2__attaquespe, .body-section-main-2__defense {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body-section-main-2__attaque h4, .body-section-main-2__attaquespe h4, .body-section-main-2__defense h4 {
+  font-family: montserrat;
+  font-style: italic;
+  font-size: 20px;
+  margin: 10px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .body-section-main-2__attaque h4, .body-section-main-2__attaquespe h4, .body-section-main-2__defense h4 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .body-section-main-2__attaque h4, .body-section-main-2__attaquespe h4, .body-section-main-2__defense h4 {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .body-section-main-2__attaque h4, .body-section-main-2__attaquespe h4, .body-section-main-2__defense h4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .body-section-main-2__attaque h4, .body-section-main-2__attaquespe h4, .body-section-main-2__defense h4 {
+    font-size: 33px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+  .body-section-main-2 {
+    width: 40%;
+    margin-left: 70px;
+  }
 }
 
 p {
+  font-family: montserrat;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  -webkit-text-decoration: underline black 1px;
+          text-decoration: underline black 1px;
+  text-underline-offset: 8px;
+  margin: 10px 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  p {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  p {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  p {
     font-size: 30px;
-}
-
-.body-section-main-1__imgtitre img {
-    height: 400px;
-    width: 400px;
-}
-
-h4 {
-    font-size: 33px;
-}
-} 
+  }
+}/*# sourceMappingURL=style.css.map */
