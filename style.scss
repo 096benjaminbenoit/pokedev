@@ -5,10 +5,10 @@ html {
 
 body {
     background-color: grey;
-    background: url("images/Landscape.png") no-repeat center fixed;
+    background: url("images/Landscape_large.png") no-repeat center fixed;
     background-size: cover;
     margin: 0;
-    animation: moving 60s infinite;
+    animation: moving 120s infinite;
 
     @keyframes moving {
         from {background-position: left;}

@@ -5,11 +5,11 @@ html {
 
 body {
   background-color: grey;
-  background: url("images/Landscape.png") no-repeat center fixed;
+  background: url("images/Landscape_large.png") no-repeat center fixed;
   background-size: cover;
   margin: 0;
-  -webkit-animation: moving 60s infinite;
-          animation: moving 60s infinite;
+  -webkit-animation: moving 120s infinite;
+          animation: moving 120s infinite;
 }
 @-webkit-keyframes moving {
   from {
