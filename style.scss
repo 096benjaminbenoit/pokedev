@@ -8,6 +8,13 @@ body {
     background: url("images/Landscape.png") no-repeat center fixed;
     background-size: cover;
     margin: 0;
+    animation: moving 60s infinite;
+
+    @keyframes moving {
+        from {background-position: left;}
+        50% {background-position: right;}
+        to {background-position: left;}
+    }
 }
 
 header {
@@ -128,7 +135,7 @@ header {
         &:hover {
             box-shadow: 0 0 1px rgb(0 0 0 / 0%);
             cursor: cell;
-            animation: survol 0.5s infinite;
+            animation: survol 0.5s 1 forwards;
             
             @keyframes survol {
                 from {transform: scale(1);}

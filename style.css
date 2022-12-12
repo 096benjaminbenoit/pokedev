@@ -8,6 +8,30 @@ body {
   background: url("images/Landscape.png") no-repeat center fixed;
   background-size: cover;
   margin: 0;
+  -webkit-animation: moving 60s infinite;
+          animation: moving 60s infinite;
+}
+@-webkit-keyframes moving {
+  from {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
+@keyframes moving {
+  from {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
 }
 
 header {
@@ -141,8 +165,8 @@ header .header-bandeau-bloc2__skew {
 .pokemon img:hover {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   cursor: cell;
-  -webkit-animation: survol 0.5s infinite;
-          animation: survol 0.5s infinite;
+  -webkit-animation: survol 0.5s 1 forwards;
+          animation: survol 0.5s 1 forwards;
 }
 @-webkit-keyframes survol {
   from {
