@@ -68,27 +68,27 @@ header {
     margin-top: 50px;
     padding-bottom: 40px;
 
-    @media only screen and (max-width: 340px) {
-        width: 100%;
-    }
-    @media only screen and (min-width: 341px) and (max-width: 575px) {
-        width: 100%;
-    }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-        width: 540px;
-    }
-    @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-        width: 720px;
-    }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        width: 960px;
-    }
-    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-        width: 1140px;
+        @media only screen and (max-width: 340px) {
+            width: 100%;
         }
-    @media only screen and (min-width: 1400px) {
-        width: 1320px;
+        @media only screen and (min-width: 341px) and (max-width: 575px) {
+            width: 100%;
+        }
+        @media only screen and (min-width: 576px) and (max-width: 767px) {
+            width: 540px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+            width: 720px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            width: 960px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            width: 1140px;
             }
+        @media only screen and (min-width: 1400px) {
+            width: 1320px;
+                }
 
     h3 {
         font-family: Montserrat;
@@ -100,22 +100,23 @@ header {
         &:hover {
             text-shadow: 0 0 1px rgb(0 0 0 / 0%);
             cursor: cell;
+            
         }
-        @media only screen and (max-width: 340px) {
-            font-size: x-small;
-        }
-        @media only screen and (min-width: 341px) and (max-width: 575px) {
-            font-size: small;
-        }
-        @media only screen and (min-width: 576px) and (max-width: 767px) {
-            font-size: medium;
-        }
-        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-            font-size: large;
-        }
-        @media only screen and (min-width: 992px) and (max-width: 1199px) {
-            font-size: large;
-        }
+            @media only screen and (max-width: 340px) {
+                font-size: x-small;
+            }
+            @media only screen and (min-width: 341px) and (max-width: 575px) {
+                font-size: small;
+            }
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+                font-size: medium;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                font-size: large;
+            }
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                font-size: large;
+            }
     }
 
     img {
@@ -127,27 +128,33 @@ header {
         &:hover {
             box-shadow: 0 0 1px rgb(0 0 0 / 0%);
             cursor: cell;
+            animation: survol 0.5s infinite;
+            
+            @keyframes survol {
+                from {transform: scale(1);}
+                to {transform: scale(1.1);}
+            }
         }
 
-        @media only screen and (max-width: 340px) {
-            width: 120px;
-            height: 120px;
-            margin: 10px;
-        }
-        @media only screen and (min-width: 341px) and (max-width: 575px) {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-        }
-        @media only screen and (min-width: 576px) and (max-width: 767px) {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-        }
-        @media only screen and (min-width: 768px) and (max-width: 1399px), (orientation: landscape) {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
+            @media only screen and (max-width: 340px) {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+            @media only screen and (min-width: 341px) and (max-width: 575px) {
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+            }
+            @media only screen and (min-width: 576px) and (max-width: 767px) {
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 1399px), (orientation: landscape) {
+                width: 200px;
+                height: 200px;
+                margin: 20px;
 
             @media only screen and (min-width: 1400px) {
             width: 250px;
@@ -192,46 +199,52 @@ a {
     height: 100%;
     margin: 0 auto;
 
-    @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 720px;
-    }
-
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        width: 960px;
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1399px){
-        width: 1140px;
-    }
-
-    @media only screen and (min-width: 1400px) {
-        width: 1320px;
-    }
+        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 720px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            width: 960px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+            width: 1140px;
+        }
+        @media only screen and (min-width: 1400px) {
+            width: 1320px;
+        }
 
     &-1__imgtitre {
+        
         img {
         width: 200px;
         background-color: white;
         border-radius: 30px;
         margin-top: 30px;
+        animation: shadow 2s infinite;
+        border: solid black 5px;
 
-        @media only screen and (min-width: 992px) and (max-width: 1199px) {
-            height: 300px;
-            width: 300px;
+
+        @keyframes shadow {
+            from {border: solid black 5px;}
+            50% {border: solid transparent 5px;
+                box-shadow: 0px 2px 78px 21px white;}
+            to {border: solid black 5px;}
         }
 
-        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-            height: 350px;
-            width: 350px;
-        }
-
-        @media only screen and (min-width: 1400px) {
-            height: 400px;
-            width: 400px;
-        }
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                height: 300px;
+                width: 300px;
+            }
+            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                height: 350px;
+                width: 350px;
+            }
+            @media only screen and (min-width: 1400px) {
+                height: 400px;
+                width: 400px;
+            }
         }
 
         h3 {
@@ -241,26 +254,23 @@ a {
             font-size: 30px;
             margin: 0 auto;
 
-            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-                font-size: 25px;
-            }
-
-            @media only screen and (min-width: 992px) and (max-width: 1199px) {
-                font-size: 30px;
-                width: 250px;
-            }
-
-            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-                font-size: 35px;
-                width: 250px;
-            }
-
-            @media only screen and (min-width: 1400px) {
-                font-size: 40px;
-                width: 300px;
+                @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                    font-size: 25px;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 30px;
+                    width: 250px;
+                }
+                @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                    font-size: 35px;
+                    width: 250px;
+                }
+                @media only screen and (min-width: 1400px) {
+                    font-size: 40px;
+                    width: 300px;
+                }
             }
         }
-    }
 
     &-2 {
         h3 {
@@ -270,25 +280,22 @@ a {
             border-radius: 30px;
             margin: 10px 0;
 
-            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-                font-size: 25px;
+                @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                    font-size: 25px;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 30px;
+                    width: 250px;
+                }
+                @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                    font-size: 35px;
+                    width: 250px;
+                }
+                @media only screen and (min-width: 1400px) {
+                    font-size: 40px;
+                    width: 300px;
+                }
             }
-
-            @media only screen and (min-width: 992px) and (max-width: 1199px) {
-                font-size: 30px;
-                width: 250px;
-            }
-
-            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-                font-size: 35px;
-                width: 250px;
-            }
-
-            @media only screen and (min-width: 1400px) {
-                font-size: 40px;
-                width: 300px;
-            }
-        }
 
         &__attaque, &__attaquespe, &__defense {
             display: flex;
@@ -302,28 +309,23 @@ a {
             font-size: 20px;
             margin: 10px 0;
 
-            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-                font-size: 25px;
-            }
-
-            @media only screen and (min-width: 992px) and (max-width: 1199px) {
-                font-size: 27px;
-            }
-
-            @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-                font-size: 30px;
-            }
-
-            @media only screen and (min-width: 1400px) {
-                font-size: 33px;
-            }
-
+                @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                    font-size: 25px;
+                }
+                @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                    font-size: 27px;
+                }
+                @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+                    font-size: 30px;
+                }
+                @media only screen and (min-width: 1400px) {
+                    font-size: 33px;
+                }
             }
         }
-
-        @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
-            width: 40%;
-            margin-left: 70px;
+            @media only screen and (min-width: 768px) and (max-width: 991px), (orientation: landscape) {
+                width: 40%;
+                margin-left: 70px;
         }
 
     }
@@ -337,16 +339,13 @@ p {
     text-decoration: underline black 1px;
     text-underline-offset: 8px;
     margin: 10px 0;
-
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        font-size: 25px;
-    }
-
-    @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-        font-size: 25px;
-    }
-
-    @media only screen and (min-width: 1400px) {
-        font-size: 30px;
-    }
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            font-size: 25px;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 25px;
+        }
+        @media only screen and (min-width: 1400px) {
+            font-size: 30px;
+        }
 }
